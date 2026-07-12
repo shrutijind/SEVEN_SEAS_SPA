@@ -35,6 +35,53 @@
         .btn {
             color: #3B2F2F;
         }
+
+        .services-section {
+            background-color: #f3f3f3;
+            padding: 88px 0 96px;
+        }
+
+        .services-title {
+            font-family: 'Handlee', cursive;
+            font-size: clamp(2.2rem, 4.4vw, 4rem);
+            color: #2c2c2c;
+            margin-bottom: 28px;
+        }
+
+        .service-card {
+            border: 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card img {
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .service-card .card-title {
+            font-family: 'Handlee', cursive;
+            color: #222;
+            margin-bottom: 8px;
+        }
+
+        .service-card .card-text {
+            color: #232323;
+            font-size: 1.05rem;
+            line-height: 1.45;
+            font-weight: 500;
+        }
+
+        @media (max-width: 767.98px) {
+            .services-section {
+                padding: 72px 0 80px;
+            }
+
+            .service-card img {
+                height: 210px;
+            }
+        }
     </style>
 </head>
 
@@ -74,6 +121,62 @@
         <p class="lead">We are dedicated to improving your overall wellbeing.</p>
         <a href="#" class="btn btn-light btn-lg">Contact Us</a>
     </div>
+
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="services-title">Our Services</h2>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <div class="card service-card h-100">
+                        <img src="assets\images\yoga.png"
+                            class="card-img-top" alt="Yoga class session">
+                        <div class="card-body p-4">
+                            <h3 class="card-title h2">Yoga Classes</h3>
+                            <p class="card-text mb-0">Improve your flexibility and reduce stress with our yoga
+                                classes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card service-card h-100">
+                        <img src="assets\images\nutrition.png"
+                            class="card-img-top" alt="Healthy food and nutritional planning">
+                        <div class="card-body p-4">
+                            <h3 class="card-title h2">Nutritional Advice</h3>
+                            <p class="card-text mb-0">Get personalized nutritional advice to help you eat
+                                healthier.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card service-card h-100">
+                        <img src="assets\images\mental_health.png"
+                            class="card-img-top" alt="Person meditating in a peaceful garden">
+                        <div class="card-body p-4">
+                            <h3 class="card-title h2">Mindfulness Sessions</h3>
+                            <p class="card-text mb-0">Reconnect with yourself through guided breathing and
+                                meditation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card service-card h-100">
+                        <img src="assets\images\wellness.png"
+                            class="card-img-top" alt="Group wellness coaching session outdoors">
+                        <div class="card-body p-4">
+                            <h3 class="card-title h2">Wellness Coaching</h3>
+                            <p class="card-text mb-0">Build healthy habits with personalized wellness plans and
+                                support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://fonts.googleapis.com/css2?family=Handle&display=swap"></script>
 
